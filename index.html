@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#0b3d91">
+<title>MINECRAFT – Robot Sumo RC | Javier Mallea</title>
+<meta name="description" content="Informe digital del Robot Sumo RC «Minecraft» – EXPOBOSCO 2026, U.E. Don Bosco El Prado.">
+<link rel="icon" href="img/logo-don-bosco.png">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+<header class="top">
+  <img src="img/logo-don-bosco.png" alt="Logo Don Bosco">
+  <strong>MINECRAFT · Robot Sumo</strong>
+  <button id="btnMenu" aria-label="Menú" aria-expanded="false">☰</button>
+  <nav id="menu">
+    <a href="#alumno">Alumno</a><a href="#proyecto">Proyecto</a><a href="#imagenes">Imágenes</a>
+    <a href="#materiales">Materiales</a><a href="#procedimiento">Procedimiento</a>
+    <a href="#expobosco">Convocatoria</a><a href="#informe">Informe</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <img src="img/galeria/prototipo_robot_sumo.jpg" alt="Prototipo del robot Minecraft">
+  <h1>Minecraft</h1>
+  <p>Carro Robot Sumo RC · Categoría A</p>
+  <p>EXPOBOSCO 2026 – VIII Versión</p>
+  <span class="etiqueta">Autobots Salesianos en los 130 años de Don Bosco</span>
+</div>
+
+<main>
+<section id="alumno">
+  <h2>Datos del alumno y curso</h2>
+  <div class="datos">
+    <div class="dato"><small>Alumno</small><span>Javier Alexander Mallea Alejo</span></div>
+    <div class="dato"><small>Curso</small><span>5to «B» Primaria</span></div>
+    <div class="dato"><small>Profesor</small><span>Edwin Apaza Hinojosa</span></div>
+    <div class="dato"><small>Área</small><span>Técnica Tecnológica</span></div>
+    <div class="dato"><small>Colegio</small><span><a href="https://www.dbp.edu.bo/">U.E. Don Bosco «El Prado» – Nivel Primario</a></span></div>
+    <div class="dato"><small>Ciudad / Gestión</small><span>La Paz, Bolivia · 2026</span></div>
+  </div>
+</section>
+
+<section id="proyecto">
+  <h2>El proyecto</h2>
+  <p><strong>Minecraft</strong> es un carro robot de sumo controlado por radio control (RC) mediante <strong>Bluetooth</strong> desde un teléfono. Su finalidad es competir en un enfrentamiento de sumo: empujar al robot rival fuera de la pista usando potencia, tracción y una pala frontal.</p>
+  <h3>Finalidad</h3>
+  <ul class="lista">
+    <li>Aplicar principios básicos de robótica, electrónica, mecánica y programación.</li>
+    <li>Diseñar y construir un prototipo propio, resistente y con buena fuerza de empuje.</li>
+    <li>Resolver problemas técnicos y explicar el proceso con claridad.</li>
+  </ul>
+  <h3>¿Cómo funciona?</h3>
+  <p>El teléfono envía una letra por Bluetooth al módulo <strong>HC-05</strong>. La placa <strong>Arduino UNO</strong> la lee y, a través del <strong>shield L293D</strong>, hace girar los dos motores en el sentido necesario.</p>
+  <div class="cmds">
+    <div><b>F</b>Adelante</div><div><b>B</b>Reversa</div><div><b>L</b>Izquierda</div><div><b>R</b>Derecha</div><div><b>S</b>Detener</div>
+  </div>
+  <p style="font-size:.9rem;color:#4a5570">Para girar, un motor avanza y el otro retrocede, de modo que el robot gira sobre su propio eje.</p>
+</section>
+
+<section id="imagenes">
+  <h2>Imágenes del prototipo</h2>
+  <div class="galeria">
+    <figure class="centro"><img src="img/diagrama.jpg" alt="Diagrama de conexiones" loading="lazy"><figcaption>Diagrama del circuito (Fritzing).</figcaption></figure>
+  </div>
+
+  <h3>Prototipo en construcción</h3>
+  <div class="galeria fotos">
+    <figure><img src="img/galeria/min/prototipo_robot_sumo.jpg" data-full="img/galeria/prototipo_robot_sumo.jpg" width="640" height="480" alt="Robot Minecraft, vista 1" loading="lazy"><figcaption>Robot Minecraft: vista general.</figcaption></figure>
+    <figure><img src="img/galeria/min/prototipo_robot_sumo2.jpg" data-full="img/galeria/prototipo_robot_sumo2.jpg" width="640" height="480" alt="Robot Minecraft, vista 2" loading="lazy"><figcaption>Robot Minecraft: vista lateral.</figcaption></figure>
+    <figure><img src="img/galeria/min/prototipo_robot_sumo3.jpg" data-full="img/galeria/prototipo_robot_sumo3.jpg" width="640" height="480" alt="Robot Minecraft, vista 3" loading="lazy"><figcaption>Robot Minecraft: componentes montados.</figcaption></figure>
+    <figure><img src="img/galeria/min/prototipo_robot_sumo4.jpg" data-full="img/galeria/prototipo_robot_sumo4.jpg" width="640" height="480" alt="Robot Minecraft, vista 4" loading="lazy"><figcaption>Robot Minecraft: prototipo final.</figcaption></figure>
+  </div>
+
+  <h3>Materiales</h3>
+  <div class="galeria fotos">
+    <figure><img src="img/galeria/min/material_placa_arduino1.jpg" data-full="img/galeria/material_placa_arduino1.jpg" width="640" height="480" alt="Placa Arduino UNO" loading="lazy"><figcaption>Placa Arduino UNO.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_placa_shiell_l293.jpg" data-full="img/galeria/material_placa_shiell_l293.jpg" width="640" height="480" alt="Shield de motores L293D" loading="lazy"><figcaption>Shield de motores L293D.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_bluetooth.jpg" data-full="img/galeria/material_bluetooth.jpg" width="640" height="480" alt="Módulo Bluetooth HC-05" loading="lazy"><figcaption>Módulo Bluetooth HC-05.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_motor.jpg" data-full="img/galeria/material_motor.jpg" width="640" height="480" alt="Motor DC con caja reductora" loading="lazy"><figcaption>Motor DC con caja reductora.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_ruedas.jpg" data-full="img/galeria/material_ruedas.jpg" width="640" height="480" alt="Ruedas con neumático" loading="lazy"><figcaption>Ruedas con neumático.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_baterias.jpg" data-full="img/galeria/material_baterias.jpg" width="480" height="640" alt="Portapilas con pilas AA" loading="lazy"><figcaption>Portapilas con pilas AA.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_cargador.jpg" data-full="img/galeria/material_cargador.jpg" width="640" height="480" alt="Cargador" loading="lazy"><figcaption>Cargador.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_interruptor.jpg" data-full="img/galeria/material_interruptor.jpg" width="640" height="480" alt="Interruptor" loading="lazy"><figcaption>Interruptor de encendido.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_chasis.jpg" data-full="img/galeria/material_chasis.jpg" width="640" height="480" alt="Chasis impreso en 3D" loading="lazy"><figcaption>Chasis impreso en 3D.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_chasis_frontal.jpg" data-full="img/galeria/material_chasis_frontal.jpg" width="640" height="480" alt="Chasis, parte frontal" loading="lazy"><figcaption>Chasis: parte frontal.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_frontal.jpg" data-full="img/galeria/material_frontal.jpg" width="640" height="480" alt="Frontal del robot" loading="lazy"><figcaption>Frontal del robot.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_pala_frontal.jpg" data-full="img/galeria/material_pala_frontal.jpg" width="640" height="480" alt="Pala frontal" loading="lazy"><figcaption>Pala frontal elaborado con lata.</figcaption></figure>
+    <figure><img src="img/galeria/min/material_tornillos.jpg" data-full="img/galeria/material_tornillos.jpg" width="640" height="480" alt="Tornillos" loading="lazy"><figcaption>Tornillos de fijación.</figcaption></figure>
+  </div>
+  <p style="font-size:.85rem;color:#5a6580">Toca una imagen para ampliarla.</p>
+</section>
+
+<section id="materiales">
+  <h2>Materiales utilizados</h2>
+  <div class="tabla-wrap"><table>
+    <tr><th>Componente</th><th>Función</th></tr>
+    <tr><td>Arduino UNO</td><td>Cerebro del robot: ejecuta el programa.</td></tr>
+    <tr><td>Shield de motores L293D (74HC595)</td><td>Entrega potencia a los motores; controla velocidad y sentido.</td></tr>
+    <tr><td>2 motores DC 3–6 V con caja reductora (amarillos)</td><td>Mueven las ruedas (conectados a M3 y M4).</td></tr>
+    <tr><td>2 ruedas con neumático</td><td>Tracción sobre la pista.</td></tr>
+    <tr><td>Módulo Bluetooth HC-05</td><td>Recibe las órdenes desde el teléfono.</td></tr>
+    <tr><td>Portapilas con 2 pilas AA</td><td>Fuente de energía (entrada EXT_PWR del shield).</td></tr>
+    <tr><td>Interruptor</td><td>Enciende y apaga el robot.</td></tr>
+    <tr><td>Chasis y pala frontal impresos en 3D</td><td>Estructura del robot; la pala ayuda a empujar al rival.</td></tr>
+    <tr><td>Cables</td><td>Conexiones eléctricas.</td></tr>
+    <tr><td>Teléfono con app de control Bluetooth</td><td>Control remoto.</td></tr>
+  </table></div>
+</section>
+
+<section id="procedimiento">
+  <h2>Procedimiento de construcción</h2>
+  <ol class="pasos">
+    <li><strong>Diseño y chasis.</strong> Se imprimió en 3D el chasis y la pala frontal, pensados para dar estabilidad y empujar.</li>
+    <li><strong>Montaje mecánico.</strong> Se fijaron los dos motores con sus ruedas y la placa Arduino sobre el chasis.</li>
+    <li><strong>Conexión de motores.</strong> Los motores se conectaron a los bornes M3 y M4 del shield L293D.</li>
+    <li><strong>Conexión Bluetooth.</strong> El HC-05 se conectó al shield: VCC y GND para energía, y TXD/RXD a los pines 10 y 9 del Arduino.</li>
+    <li><strong>Alimentación.</strong> Se conectó el portapilas AA al borne EXT_PWR del shield, con un interruptor.</li>
+    <li><strong>Programación.</strong> Se cargó el programa en el Arduino IDE con las librerías <em>AFMotor</em> y <em>SoftwareSerial</em>.</li>
+    <li><strong>Pruebas y ajustes.</strong> Se probaron los movimientos desde el teléfono y se ajustó la velocidad de cada motor para que el robot avance recto.</li>
+  </ol>
+
+  <h3>Dificultades y soluciones</h3>
+  <ul class="lista">
+    <li><strong>El robot se desviaba</strong> porque un motor era más rápido: se compensó en el programa bajando 50 de velocidad al motor 3.</li>
+    <li><strong>Fuerza de empuje:</strong> se usó una caja reductora y una pala frontal para ganar torque y contacto con el rival.</li>
+  </ul>
+
+  <h3>Programa utilizado (Arduino)</h3>
+  <p style="font-size:.9rem;color:#4a5570">Código completo con el que se programó el robot. Puedes copiarlo, pegar tu propia versión o descargarlo como archivo <code>.ino</code>.</p>
+  <pre id="codigoPrint" class="solo-print" aria-hidden="true"></pre>
+  <textarea id="codigo" spellcheck="false" aria-label="Código del programa">#include &lt;AFMotor.h&gt;
+AF_DCMotor Motor2(3);
+AF_DCMotor Motor3(4);
+#include &lt;SoftwareSerial.h&gt;
+SoftwareSerial WMBT(10,9);
+char leer;
+void setup(){
+Serial.begin(9600);
+Serial.println("Listo");
+WMBT.begin(9600);
+Motor2.run(RELEASE);
+Motor3.run(RELEASE);
+}
+void loop() {
+if (WMBT.available()){
+leer = WMBT.read();
+Serial.println(leer);
+switch(leer){
+case 'F':
+adelante();
+WMBT.println("Adelante");
+break;
+case 'f':
+adelante();
+WMBT.println("Adelante");
+break;
+case 'B':
+retroceder();
+WMBT.println("Reversa");
+break;
+case 'b':
+retroceder();
+WMBT.println("Reversa");
+break;
+case 'L':
+izquierda();
+WMBT.println("Izquierda");
+break;
+case 'l':
+izquierda();
+WMBT.println("Izquierda");
+break;
+case 'R':
+derecha();
+WMBT.println("Derecha");
+break;
+case 'r':
+derecha();
+WMBT.println("Derecha");
+break;
+case 'S':
+detener();
+WMBT.println("Detener");
+break;
+case 'd':
+detener();
+WMBT.println("Detener");
+break;
+}
+}
+}
+void adelante(){
+Motor2.setSpeed(200);
+Motor2.run(FORWARD);
+Motor3.setSpeed(200-50);
+Motor3.run(FORWARD);
+}
+void retroceder(){
+Motor2.setSpeed(180);
+Motor2.run(BACKWARD);
+Motor3.setSpeed(180-50);
+Motor3.run(BACKWARD);
+}
+void derecha(){
+Motor2.setSpeed(200);
+Motor2.run(BACKWARD);
+Motor3.setSpeed(200-50);
+Motor3.run(FORWARD);
+}
+void izquierda(){
+Motor2.setSpeed(200);
+Motor2.run(FORWARD);
+Motor3.setSpeed(200-50);
+Motor3.run(BACKWARD);
+}
+void detener(){
+Motor2.setSpeed(0);
+Motor2.run(RELEASE);
+Motor3.setSpeed(0);
+Motor3.run(RELEASE);
+}</textarea>
+  <div class="acciones">
+    <button class="btn" id="copiar"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M16 1H4a2 2 0 0 0-2 2v14h2V3h12V1zm3 4H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zm0 16H8V7h11v14z"/></svg><span>Copiar</span></button>
+    <button class="btn" id="pegar"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M19 2h-4.18C14.4.84 13.3 0 12 0S9.6.84 9.18 2H5a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 18H5V4h2v3h10V4h2v16z"/></svg><span>Pegar</span></button>
+    <button class="btn" id="descargar"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg><span>Descargar .ino</span></button>
+    <button class="btn sec" id="restaurar"><svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M12.5 8c-2.65 0-5.05 1-6.9 2.6L2 7v9h9l-3.6-3.6A7.96 7.96 0 0 1 12.5 10c3.5 0 6.5 2.3 7.55 5.5l2.37-.78A10 10 0 0 0 12.5 8z"/></svg><span>Restaurar original</span></button>
+  </div>
+  <p id="estado" class="estado" role="status"></p>
+
+  <h3>Video del ensamblaje</h3>
+  <p style="font-size:.9rem;color:#4a5570">Este video detalla los pasos del ensamblaje del robot.</p>
+  <a class="btn btn-yt" href="https://youtu.be/gU38OAobjjk" target="_blank" rel="noopener">▶ Ver el video en YouTube</a>
+</section>
+
+<section id="expobosco">
+  <h2>EXPOBOSCO 2026 · Aspectos de la convocatoria</h2>
+  <p>Organiza el Área de Técnica Tecnológica de la U.E. Don Bosco «El Prado» – Nivel Primario, en el marco de los 130 años de la Obra Don Bosco.</p>
+  <div class="tabla-wrap"><table>
+    <tr><th>Hito</th><th>Fecha</th></tr>
+    <tr><td>Entrega de video (1 a 3 min) en Classroom</td><td>Domingo 11 de octubre de 2026</td></tr>
+    <tr><td>Defensa ante el jurado</td><td>12 al 16 de octubre de 2026</td></tr>
+    <tr><td>Fase final</td><td>Martes 27 de octubre de 2026</td></tr>
+  </table></div>
+  <h3>Cómo se evalúa (100 puntos)</h3>
+  <ul class="lista">
+    <li>Materiales y componentes.</li>
+    <li>Procedimiento y evidencias (este informe, accesible por código QR).</li>
+    <li>Socialización y defensa, incluido el circuito electrónico.</li>
+    <li>Competencia y funcionamiento en pista: los enfrentamientos se sortean y los dos primeros lugares clasifican a la fase final.</li>
+  </ul>
+  <p class="aviso">Categoría A: Carro Robot Sumo RC (5.º y 6.º de primaria). Participación individual.</p>
+  <h3>Objetivos que cumple el proyecto</h3>
+  <ul class="lista">
+    <li>Creatividad e innovación en el diseño de carritos robots.</li>
+    <li>Aplicación de electrónica, mecánica y programación.</li>
+    <li>Investigación, experimentación y resolución de problemas.</li>
+    <li>Comunicación y defensa de lo aprendido.</li>
+  </ul>
+</section>
+
+<section id="informe" class="no-print">
+  <h2>Descargar el informe</h2>
+  <p>Descarga en PDF el informe completo del proyecto: datos del alumno, descripción, imágenes, materiales, procedimiento, programa y convocatoria.</p>
+  <a class="btn btn-pdf" href="doc/informe-robot-sumo-minecraft.pdf" download="Informe-Robot-Sumo-Minecraft.pdf">⬇ Descargar informe (PDF)</a>
+</section>
+</main>
+
+<footer>
+  <p><strong>Minecraft</strong> · Javier Alexander Mallea Alejo · 5.º «B» Primaria</p>
+  <p>U.E. Don Bosco «El Prado» · EXPOBOSCO 2026 – VIII Versión</p>
+</footer>
+
+<div id="visor" role="dialog" aria-label="Imagen ampliada"><img alt=""></div>
+<script src="js/app.js"></script>
+</body>
+</html>
