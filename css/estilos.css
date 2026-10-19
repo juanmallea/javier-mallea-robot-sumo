@@ -29,6 +29,8 @@ figure{margin:0}
 figure img{border-radius:10px;border:1px solid #d5dbea;cursor:zoom-in;width:100%}
 .galeria.fotos{grid-template-columns:1fr 1fr;gap:.6rem}
 .galeria.fotos img{aspect-ratio:4/3;object-fit:cover;height:auto}
+.app-control img{border-radius:10px;border:1px solid #d5dbea;width:100%;aspect-ratio:4/3;object-fit:cover;height:auto;display:block}
+.app-control .app-cap{font-size:.85rem;margin-top:.3rem}
 figure.centro{grid-column:1/-1;justify-self:center;max-width:560px;width:100%;text-align:center}
 figcaption{font-size:.9rem;color:#4a5570;margin-top:.3rem}
 table{width:100%;border-collapse:collapse;font-size:.93rem}
@@ -63,7 +65,7 @@ footer{background:var(--azul-osc);color:#fff;text-align:center;padding:1.2rem 1r
  .galeria.fotos{grid-template-columns:repeat(3,1fr)}
 }
 .solo-print{display:none}
-.btn.btn-pdf{display:block;width:100%;max-width:420px;margin:.8rem auto 0;text-align:center;font-size:1.05rem;font-weight:700;padding:.9rem 1.2rem;border-radius:999px;background:linear-gradient(135deg,var(--azul),var(--azul-osc));box-shadow:0 4px 14px #0b3d9159}
+.btn.btn-pdf{display:flex;align-items:center;justify-content:center;gap:.6rem;width:100%;max-width:420px;margin:.8rem auto 0;text-align:center;font-size:1.05rem;font-weight:700;padding:.9rem 1.2rem;border-radius:999px;background:linear-gradient(135deg,var(--azul),var(--azul-osc));box-shadow:0 4px 14px #0b3d9159}
 @media print{
  header.top,#btnMenu,#visor,.no-print,.acciones,#estado,textarea#codigo{display:none!important}
  .solo-print{display:block;max-height:none;overflow:visible;white-space:pre-wrap;font-size:.7rem}

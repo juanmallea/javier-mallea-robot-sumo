@@ -15,14 +15,14 @@
   <strong>MINECRAFT · Robot Sumo</strong>
   <button id="btnMenu" aria-label="Menú" aria-expanded="false">☰</button>
   <nav id="menu">
-    <a href="#alumno">Alumno</a><a href="#proyecto">Proyecto</a><a href="#imagenes">Imágenes</a>
-    <a href="#materiales">Materiales</a><a href="#procedimiento">Procedimiento</a>
+    <a href="#alumno">Alumno</a><a href="#introduccion">Introducción</a><a href="#proyecto">Proyecto</a><a href="#imagenes">Imágenes</a>
+    <a href="#materiales">Materiales</a><a href="#procedimiento">Procedimiento</a><a href="#conclusiones">Conclusiones</a>
     <a href="#expobosco">Convocatoria</a><a href="#informe">Informe</a>
   </nav>
 </header>
 
 <div class="hero">
-  <img src="img/galeria/prototipo_robot_sumo.jpg" alt="Prototipo del robot Minecraft">
+  <img src="img/emblema-minecraft.png" width="840" height="840" alt="Emblema del robot Minecraft">
   <h1>Minecraft</h1>
   <p>Carro Robot Sumo RC · Categoría A</p>
   <p>EXPOBOSCO 2026 – VIII Versión</p>
@@ -39,7 +39,21 @@
     <div class="dato"><small>Área</small><span>Técnica Tecnológica</span></div>
     <div class="dato"><small>Colegio</small><span><a href="https://www.dbp.edu.bo/">U.E. Don Bosco «El Prado» – Nivel Primario</a></span></div>
     <div class="dato"><small>Ciudad / Gestión</small><span>La Paz, Bolivia · 2026</span></div>
+    <div class="dato"><small>Título del proyecto</small><span>Construcción y programación de un robot sumo controlado por Bluetooth</span></div>
+    <div class="dato"><small>Nombre del robot</small><span>Minecraft</span></div>
   </div>
+  <h3>Objetivo del proyecto</h3>
+  <p>Diseñar y construir un vehículo robotizado capaz de ser controlado de forma inalámbrica mediante un teléfono celular para competencias de sumo.</p>
+</section>
+
+<section id="introduccion">
+  <h2>Introducción</h2>
+  <h3>¿Qué es un robot sumo?</h3>
+  <p>Es un autito robot que compite contra otro dentro de un círculo o ring. Gana el que logra <strong>empujar al oponente fuera del ring</strong> sin salirse él. Se parece al sumo japonés, pero con robots: importan la fuerza, la tracción, el diseño y el control del piloto.</p>
+  <h3>¿Por qué Arduino UNO?</h3>
+  <p>El <strong>Arduino UNO</strong> es el «cerebro» del robot: es una placa programable, económica y fácil de usar, ideal para aprender. Lee las órdenes que llegan y decide qué motores deben girar y en qué sentido.</p>
+  <h3>¿Cómo ayuda el Bluetooth?</h3>
+  <p>La tecnología <strong>Bluetooth</strong> (módulo <strong>HC-05</strong>) permite controlar el robot <strong>sin cables</strong> desde un celular o tablet, a corta distancia. El teléfono envía una letra por cada orden y el módulo se la entrega al Arduino.</p>
 </section>
 
 <section id="proyecto">
@@ -71,6 +85,8 @@
     <figure><img src="img/galeria/min/prototipo_robot_sumo2.jpg" data-full="img/galeria/prototipo_robot_sumo2.jpg" width="640" height="480" alt="Robot Minecraft, vista 2" loading="lazy"><figcaption>Robot Minecraft: vista lateral.</figcaption></figure>
     <figure><img src="img/galeria/min/prototipo_robot_sumo3.jpg" data-full="img/galeria/prototipo_robot_sumo3.jpg" width="640" height="480" alt="Robot Minecraft, vista 3" loading="lazy"><figcaption>Robot Minecraft: componentes montados.</figcaption></figure>
     <figure><img src="img/galeria/min/prototipo_robot_sumo4.jpg" data-full="img/galeria/prototipo_robot_sumo4.jpg" width="640" height="480" alt="Robot Minecraft, vista 4" loading="lazy"><figcaption>Robot Minecraft: prototipo final.</figcaption></figure>
+    <figure><img src="img/galeria/min/prototipo_robot_sumo2_frontal_plast.jpg" data-full="img/galeria/prototipo_robot_sumo2_frontal_plast.jpg" width="640" height="480" alt="Robot Minecraft, frontal con plástico" loading="lazy"><figcaption>Robot Minecraft: frontal con plástico.</figcaption></figure>
+    <figure><img src="img/galeria/min/prototipo_robot_sumo3_plast.jpg" data-full="img/galeria/prototipo_robot_sumo3_plast.jpg" width="640" height="480" alt="Robot Minecraft, componentes con plástico" loading="lazy"><figcaption>Robot Minecraft: componentes con plástico.</figcaption></figure>
   </div>
 
   <h3>Materiales</h3>
@@ -88,6 +104,8 @@
     <figure><img src="img/galeria/min/material_frontal.jpg" data-full="img/galeria/material_frontal.jpg" width="640" height="480" alt="Frontal del robot" loading="lazy"><figcaption>Frontal del robot.</figcaption></figure>
     <figure><img src="img/galeria/min/material_pala_frontal.jpg" data-full="img/galeria/material_pala_frontal.jpg" width="640" height="480" alt="Pala frontal" loading="lazy"><figcaption>Pala frontal elaborado con lata.</figcaption></figure>
     <figure><img src="img/galeria/min/material_tornillos.jpg" data-full="img/galeria/material_tornillos.jpg" width="640" height="480" alt="Tornillos" loading="lazy"><figcaption>Tornillos de fijación.</figcaption></figure>
+    <figure><img src="img/galeria/min/bluetooth_rc_controller.jpg" data-full="img/galeria/bluetooth_rc_controller.jpg" width="640" height="480" alt="App Bluetooth RC Controller en el celular" loading="lazy"><figcaption>App Bluetooth RC Controller.</figcaption></figure>
+    <div class="app-control"><a href="bluetooth_rc_controller.apk" download title="Descargar bluetooth_rc_controller.apk"><img src="img/galeria/min/material_control_apk.svg" width="640" height="480" alt="Control Bluetooth RC (APK)" loading="lazy"></a><div class="app-cap">Control Bluetooth (<a href="bluetooth_rc_controller.apk" download>bluetooth_rc_controller.apk</a>).</div></div>
   </div>
   <p style="font-size:.85rem;color:#5a6580">Toca una imagen para ampliarla.</p>
 </section>
@@ -234,36 +252,19 @@ Motor3.run(RELEASE);
   <a class="btn btn-yt" href="https://youtu.be/gU38OAobjjk" target="_blank" rel="noopener">▶ Ver el video en YouTube</a>
 </section>
 
-<section id="expobosco">
-  <h2>EXPOBOSCO 2026 · Aspectos de la convocatoria</h2>
-  <p>Organiza el Área de Técnica Tecnológica de la U.E. Don Bosco «El Prado» – Nivel Primario, en el marco de los 130 años de la Obra Don Bosco.</p>
-  <div class="tabla-wrap"><table>
-    <tr><th>Hito</th><th>Fecha</th></tr>
-    <tr><td>Entrega de video (1 a 3 min) en Classroom</td><td>Domingo 11 de octubre de 2026</td></tr>
-    <tr><td>Defensa ante el jurado</td><td>12 al 16 de octubre de 2026</td></tr>
-    <tr><td>Fase final</td><td>Martes 27 de octubre de 2026</td></tr>
-  </table></div>
-  <h3>Cómo se evalúa (100 puntos)</h3>
+<section id="conclusiones">
+  <h2>Conclusiones</h2>
   <ul class="lista">
-    <li>Materiales y componentes.</li>
-    <li>Procedimiento y evidencias (este informe, accesible por código QR).</li>
-    <li>Socialización y defensa, incluido el circuito electrónico.</li>
-    <li>Competencia y funcionamiento en pista: los enfrentamientos se sortean y los dos primeros lugares clasifican a la fase final.</li>
-  </ul>
-  <p class="aviso">Categoría A: Carro Robot Sumo RC (5.º y 6.º de primaria). Participación individual.</p>
-  <h3>Objetivos que cumple el proyecto</h3>
-  <ul class="lista">
-    <li>Creatividad e innovación en el diseño de carritos robots.</li>
-    <li>Aplicación de electrónica, mecánica y programación.</li>
-    <li>Investigación, experimentación y resolución de problemas.</li>
-    <li>Comunicación y defensa de lo aprendido.</li>
+    <li>Aprendí a diferenciar los componentes electrónicos (Arduino, shield, motores, Bluetooth) y a interconectarlos de forma segura.</li>
+    <li>Comprendí la importancia de la programación para darle órdenes a una máquina.</li>
+    <li>Combiné la creatividad en el diseño físico (chasis y pala) con la lógica de la programación, probando y corrigiendo errores hasta que el robot avanzó recto.</li>
   </ul>
 </section>
 
 <section id="informe" class="no-print">
   <h2>Descargar el informe</h2>
   <p>Descarga en PDF el informe completo del proyecto: datos del alumno, descripción, imágenes, materiales, procedimiento, programa y convocatoria.</p>
-  <a class="btn btn-pdf" href="doc/informe-robot-sumo-minecraft.pdf" download="Informe-Robot-Sumo-Minecraft.pdf">⬇ Descargar informe (PDF)</a>
+  <a class="btn btn-pdf" href="doc/informe-robot-sumo-minecraft.pdf" download="Informe-Robot-Sumo-Minecraft.pdf"><svg class="ico-pdf" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M6 2h8l6 6v12a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="#fff"/><path d="M14 2l6 6h-4a2 2 0 0 1-2-2z" fill="#c9d3ea"/><rect x="2" y="12" width="20" height="8" rx="1.5" fill="#e62117"/><text x="12" y="18.3" text-anchor="middle" font-family="Arial,sans-serif" font-size="6" font-weight="700" fill="#fff">PDF</text></svg>Descargar informe (PDF)</a>
 </section>
 </main>
 

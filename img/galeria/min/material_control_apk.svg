@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 480" role="img" aria-label="Control remoto Bluetooth">
+  <rect width="640" height="480" fill="#1e2a4a"/>
+  <g transform="translate(320 220)">
+    <rect x="-170" y="-90" width="340" height="180" rx="70" fill="#2f4170" stroke="#8fa6e0" stroke-width="6"/>
+    <rect x="-125" y="-12" width="80" height="24" rx="6" fill="#dbe4ff"/>
+    <rect x="-97" y="-40" width="24" height="80" rx="6" fill="#dbe4ff"/>
+    <circle cx="95" cy="-28" r="20" fill="#ff5a5a"/>
+    <circle cx="125" cy="12" r="20" fill="#4cd07d"/>
+    <circle cx="65" cy="12" r="20" fill="#ffd24d"/>
+    <circle cx="95" cy="38" r="0" fill="none"/>
+    <circle cx="0" cy="10" r="14" fill="#8fa6e0"/>
+  </g>
+  <g transform="translate(320 395)" fill="#fff" font-family="Arial,sans-serif" text-anchor="middle">
+    <text font-size="34" font-weight="700">Control Bluetooth RC</text>
+    <text y="34" font-size="22" fill="#8fa6e0">Descargar APK ↓</text>
+  </g>
+</svg>
